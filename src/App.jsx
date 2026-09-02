@@ -58,7 +58,7 @@ export default function App(){
   const statementRows=[...statementDeposits.map(x=>({...x,type:'Cuota',concept:x.concept,status:'Pagada'})),...statementFines.map(x=>({...x,type:'Multa',concept:x.reason}))].sort((a,b)=>b.id-a.id)
 
   return <div className="app">
-    <header><div className="brand"><span className="brandIcon"><Building2/></span><div><h1>Administración del edificio</h1><p>9 departamentos · Periodo de 6 meses</p></div></div><div className="actions">
+    <header><div className="brand"><span className="brandIcon"><Building2/></span><div><h1>Administración de Pirineos 184</h1><p>9 departamentos · Periodo de 6 meses</p></div></div><div className="actions">
       <select value={month} onChange={e=>setMonth(e.target.value)}><option>Todos</option>{MONTHS.map(m=><option key={m}>{m}</option>)}</select>
       <button className="success" onClick={()=>setModal('deposit')}><ArrowDownToLine/>Depósito</button>
       <button onClick={()=>setModal('expense')}><ArrowUpFromLine/>Gasto</button>
