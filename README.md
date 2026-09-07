@@ -1,4 +1,4 @@
-# Portal de Administración del Edificio
+# Portal de Administración de Pirineos
 
 Proyecto local en React + Vite para registrar depósitos, gastos, multas, estados de cuenta y comprobantes.
 
